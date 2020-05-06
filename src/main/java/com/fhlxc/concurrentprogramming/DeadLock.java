@@ -19,7 +19,6 @@ public class DeadLock {
     public void deadLock() {
         Thread t1 = new Thread(new Runnable() {
             
-            @Override
             public void run() {
                 synchronized (A) {
                     try {
@@ -36,7 +35,6 @@ public class DeadLock {
         });
         Thread t2 = new Thread(new Runnable() {
             
-            @Override
             public void run() {
                 synchronized (B) {
                     synchronized (A) {

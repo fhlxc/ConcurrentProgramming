@@ -25,7 +25,6 @@ public class ConcurrencyTest {
         long start = System.currentTimeMillis();
         Thread thread = new Thread(new Runnable() {
             
-            @Override
             public void run() {
                 @SuppressWarnings("unused")
                 int a = 0;
